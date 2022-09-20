@@ -4,17 +4,25 @@ import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper'
 import './About.scss'
 import { urlFor, client } from '../../client'
+import { images } from '../../constants'
+
+// Temporary DataBase
+const abouts = [
+    { title: 'Front-End Developer', description: 'I am a Front-End Developer.', imgUrl: images.react },
+    { title: 'Back-End Developer', description: 'I am a Back-End Developer.', imgUrl: images.node },
+    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer.', imgUrl: images.figma }
+]
 
 const About = () => {
 
-    const [abouts, setAbouts] = useState([])
+    // const [abouts, setAbouts] = useState([])
 
-    useEffect(() => {
-        const query = '*[_type == "abouts"]'
+    // useEffect(() => {
+    //     const query = '*[_type === "abouts"]'
 
-        client.fetch(query)
-            .then((data) => setAbouts(data))
-    }, [])
+    //     client.fetch(query)
+    //         .then((data) => setAbouts(data))
+    // }, [])
 
     return (
         <>
@@ -34,7 +42,7 @@ const About = () => {
                             className='app__profile-item'
                             key={about.title + index}
                         >
-                            <img src={urlFor(about.imgUrl)} alt={about.title} />
+                            <img src={about.imgUrl} alt={about.title} />
 
                             <h2 className='bold-text' style={{ marginTop: 20 }}>
                                 {about.title}
