@@ -1,28 +1,19 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 
 import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper'
 import './About.scss'
-import { urlFor, client } from '../../client'
+// import { urlFor, client } from '../../client'
 import { images } from '../../constants'
 
 // Temporary DataBase
 const abouts = [
-    { title: 'Front-End Developer', description: 'I am a Front-End Developer.', imgUrl: images.react },
-    { title: 'Back-End Developer', description: 'I am a Back-End Developer.', imgUrl: images.node },
-    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer.', imgUrl: images.figma }
+    { title: 'Front-End Developer', description: 'I am a Front-End Developer.', imgUrl: images.reactjs },
+    { title: 'Back-End Developer', description: 'I am a Back-End Developer.', imgUrl: images.nodejs },
+    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer.', imgUrl: images.uiux }
 ]
 
 const About = () => {
-
-    // const [abouts, setAbouts] = useState([])
-
-    // useEffect(() => {
-    //     const query = '*[_type === "abouts"]'
-
-    //     client.fetch(query)
-    //         .then((data) => setAbouts(data))
-    // }, [])
 
     return (
         <>
