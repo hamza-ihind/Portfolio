@@ -2,13 +2,16 @@ import { useState } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import { images } from '../../constants'
 import './Work.scss'
 
 const works = [
     { title: 'Back-End Developer', description: 'I am a Back-End Developer.', tags: ["All", "Web App"], imgUrl: images.reactjs },
-    { title: 'UI/UX designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
+    { title: 'UI/UX g designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
+    { title: 'UI/UX  h designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
+    { title: 'UI/UX e designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
+    { title: 'UI/UX a designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
 ]
 
 const Work = () => {
@@ -98,4 +101,8 @@ const Work = () => {
     )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+    MotionWrap(Work, 'app__work'),
+    'work',
+    'app__primarybg'
+)
