@@ -46,6 +46,8 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
 import clock from '../assets/clock.png';
+import todoist from '../assets/todoist.jpg';
+import ensa from '../assets/ensa.png';
 
 export default {
 	email,
@@ -92,4 +94,6 @@ export default {
 	quote,
 	clock,
 	hassan,
+	todoist,
+	ensa,
 };

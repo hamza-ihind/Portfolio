@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com'
 
 import { images } from '../../constants'
@@ -20,7 +19,6 @@ const Footer = () => {
     }
 
     const handleSubmit = (e) => {
-        setLoading(true)
         e.preventDefault();
 
         emailjs.sendForm('service_0vmxz31', 'template_nj8ljez', e.target, "fHv_1o66YkbGxmYrr").then(res => { console.log(res) }).catch((err) => console.log(err))
@@ -48,7 +46,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='app__footer-form app__flex'>
+            <form className='app__footer-form app__flex' onSubmit={handleSubmit}>
                 <div className='app__flex'>
                     <input className='p-text' type='text' placeholder='Your name' value={name} onChange={handleChangeInput} name='name' />
                 </div>
@@ -58,10 +56,10 @@ const Footer = () => {
                 <div>
                     <textarea className='p-text' placeholder='Your message' value={message} name="message" onChange={handleChangeInput}></textarea>
                 </div>
-                <button type='button' className='p-text' onClick={handleSubmit} >
-                    {loading ? 'Sending...' : 'Send Message'}
+                <button type='submit' className='p-text' >
+                    Send Message
                 </button>
-            </div>
+            </form>
 
             <div className='copyright'>
                 <p className='p-text'> @2022 E11even </p>
