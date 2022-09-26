@@ -17,35 +17,41 @@ const About = () => {
 
     return (
         <>
+            <p className='p-text p-desc'>[ Who I am ?? ]</p>
             <h2 className='head-text'>
-                I know that <span>Good Developement</span>
+                a <span>Human-First</span>
                 <br />
-                means <span>Good business</span>
+                a <span>Full-stack Web developer</span>
             </h2>
 
-            <div className='app__profiles'>
-                {
-                    abouts.map((about, index) => (
-                        <motion.div
-                            whileInView={{ opacity: 1 }}
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.4, type: 'tween' }}
-                            className='app__profile-item'
-                            key={about.title + index}
-                        >
-                            <img src={about.imgUrl} alt={about.title} />
+            <img src={images.pattern} alt="pattern" className='pattern' />
+            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
 
-                            <h2 className='bold-text' style={{ marginTop: 20 }}>
-                                {about.title}
-                            </h2>
+            <div className='app__flex'>
+                <div className='app__profiles'>
+                    {
+                        abouts.map((about, index) => (
+                            <motion.div
+                                whileInView={{ opacity: 1 }}
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ duration: 0.4, type: 'tween' }}
+                                className='app__profile-item'
+                                key={about.title + index}
+                            >
+                                <img src={about.imgUrl} alt={about.title} />
 
-                            <p className='p-text' style={{ marginTop: 10 }}>
-                                {about.description}
-                            </p>
+                                <h2 className='bold-text' style={{ marginTop: 20 }}>
+                                    {about.title}
+                                </h2>
 
-                        </motion.div>
-                    ))
-                }
+                                <p className='p-text' style={{ marginTop: 10 }}>
+                                    {about.description}
+                                </p>
+
+                            </motion.div>
+                        ))
+                    }
+                </div>
             </div>
 
         </>

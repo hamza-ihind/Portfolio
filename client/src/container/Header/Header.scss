@@ -127,8 +127,8 @@
 
 	div:nth-child(2) {
 		margin: 1.75rem;
-		width: 150px;
-		height: 150px;
+		width: 130px;
+		height: 130px;
 	}
 
 	div:nth-child(3) {
@@ -175,7 +175,7 @@
 	position: relative;
 
 	img {
-		width: 100%;
+		width: 800px;
 		object-fit: contain;
 		z-index: 1;
 	}
@@ -192,5 +192,11 @@
 
 	@media screen and (max-width: 1200px) {
 		margin: 2rem 0;
+	}
+
+	@media screen and (max-width: 1200px) {
+		img {
+			width: 500px;
+		}
 	}
 }

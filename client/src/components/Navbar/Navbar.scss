@@ -6,9 +6,9 @@
 	padding: 1rem 2rem;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(4px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	position: fixed;
-	z-index: 2;
+	z-index: 15;
 
 	&-logo {
 		display: flex;
@@ -45,7 +45,7 @@
 			}
 
 			a {
-				color: var(--gray-color);
+				color: var(--secondary-color);
 				text-decoration: none;
 				flex-direction: column;
 				text-transform: uppercase;
@@ -53,13 +53,13 @@
 				transition: all 0.3s ease-in-out;
 
 				&:hover {
-					color: var(--secondary-color);
+					color: var(--gray-color);
 				}
 			}
 
 			&:hover {
 				div {
-					background-color: var(--secondary-color);
+					background-color: var(--gray-color);
 				}
 			}
 		}

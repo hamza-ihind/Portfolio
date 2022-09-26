@@ -7,11 +7,10 @@ import { images } from '../../constants'
 import './Work.scss'
 
 const works = [
-    { title: 'Back-End Developer', description: 'I am a Back-End Developer.', tags: ["All", "Web App"], imgUrl: images.reactjs },
-    { title: 'UI/UX g designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
-    { title: 'UI/UX  h designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
-    { title: 'UI/UX e designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
-    { title: 'UI/UX a designer', description: 'I am a UI/UX Designer.', tags: ["All", "UI/UX"], imgUrl: images.uiux },
+    { title: 'Analog Clock', description: 'Analog Clock made with HTML CSS JS, to test my UI design skills', tags: ["All", "UI/UX"], imgUrl: images.clock, codeLink: "https://github.com/hamza-ihind/Analog-Clock" },
+    { title: 'Analog Clock', description: 'Analog Clock made with HTML CSS JS, to test my UI design skills', tags: ["All", "UI/UX"], imgUrl: images.clock, codeLink: "https://github.com/hamza-ihind/Analog-Clock" },
+    { title: 'Analog Clock', description: 'Analog Clock made with HTML CSS JS, to test my UI design skills', tags: ["All", "UI/UX"], imgUrl: images.clock, codeLink: "https://github.com/hamza-ihind/Analog-Clock" },
+    { title: 'Analog Clock', description: 'Analog Clock made with HTML CSS JS, to test my UI design skills', tags: ["All", "UI/UX"], imgUrl: images.clock, codeLink: "https://github.com/hamza-ihind/Analog-Clock" },
 ]
 
 const Work = () => {
@@ -29,15 +28,18 @@ const Work = () => {
 
             if (item === "All") setFilterWork(works)
             else setFilterWork(works.filter((work) => work.tags.includes(item)));
-        }, 500);
+        }, 400);
     }
 
     return (
         <>
-            <h2 className='head-text'> My Creative <span> Portfolio </span></h2>
+            <h2 className='head-text'> my projects <span> Portfolio </span></h2>
+
+            <img src={images.pattern} alt="pattern" className='pattern' />
+            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
 
             <div className='app__work-filter'>
-                {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+                {['UI/UX', 'Web Apps', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleWorkFilter(item)}
@@ -50,7 +52,7 @@ const Work = () => {
 
             <motion.div
                 animate={animateCard}
-                transition={{ duration: 0.5, delayChildren: 0.5 }}
+                transition={{ duration: 0.4, delayChildren: 0.4 }}
                 className='app__work-portfolio'
             >
                 {filterWork.map((work, index) => (
@@ -60,25 +62,15 @@ const Work = () => {
 
                             <motion.div
                                 whileHover={{ opacity: [0, 1] }}
-                                transition={{ duration: 0.5, ease: 'easeInOut', staggerChildren: 0.5 }}
-                                className="app__work-hover app__flex "
+                                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                                className="app__work-hover app__flex"
                             >
-                                <a href={work.projectLink} target="_blank" rel='noreferrer'>
+                                <a href={work.codeLink} >
                                     <motion.div
                                         whileInView={{ scale: [0, 1] }}
-                                        whileHover={{ scale: [1, 0.9] }}
+                                        whileHover={{ scale: [1, 0.90] }}
                                         transition={{ duration: 0.25 }}
-                                        className="app__work-hover app__flex "
-                                    >
-                                        <AiFillEye />
-                                    </motion.div>
-                                </a>
-                                <a href={work.codeLink} target="_blank" rel='noreferrer'>
-                                    <motion.div
-                                        whileInView={{ scale: [0, 1] }}
-                                        whileHover={{ scale: [1, 0.9] }}
-                                        transition={{ duration: 0.25 }}
-                                        className="app__work-hover app__flex "
+                                        className="app__flex"
                                     >
                                         <AiFillGithub />
                                     </motion.div>

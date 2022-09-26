@@ -28,7 +28,7 @@ const Header = () => (
                     <span>👋</span>
                     <div style={{ marginLeft: 20 }}>
                         <p className="p-text">Hello, I am</p>
-                        <h1 className="head-text">E11even</h1>
+                        <h1 className="head-text">Hamza</h1>
                     </div>
                 </div>
 
@@ -44,14 +44,14 @@ const Header = () => (
             transition={{ duration: 0.5, delayChildren: 0.5 }}
             className="app__header-img"
         >
-            <img src={images.profile} alt="profile_bg" />
-            <motion.img
+            <img src={images.profile2} alt="profile_bg" />
+            {/* <motion.img
                 whileInView={{ scale: [0, 1] }}
                 transition={{ duration: 1, ease: 'easeInOut' }}
                 src={images.circle}
                 alt="profile_circle"
                 className="overlay_circle"
-            />
+            /> */}
         </motion.div>
 
         <motion.div
@@ -59,7 +59,7 @@ const Header = () => (
             whileInView={scaleVariants.whileInView}
             className="app__header-circles"
         >
-            {[images.node, images.react, images.figma].map((circle, index) => (
+            {[images.node, images.react, images.xd].map((circle, index) => (
                 <div className="circle-cmp app__flex" key={`circle-${index}`}>
                     <img src={circle} alt="profile_bg" />
                 </div>

@@ -34,6 +34,36 @@
 	width: 100%;
 	flex-direction: column;
 	padding: 4rem 2rem;
+	position: relative;
+	z-index: 1;
+
+	.pattern {
+		position: absolute;
+		width: 500px;
+		bottom: 0;
+		left: -4.1%;
+		z-index: 0;
+		opacity: 50%;
+		z-index: 1;
+	}
+
+	.pattern-rotated {
+		position: absolute;
+		width: 500px;
+		top: 0;
+		right: -3.2%;
+		z-index: 0;
+		rotate: 180deg;
+		opacity: 50%;
+		z-index: 1;
+	}
+
+	@media screen and (max-width: 1600px) {
+		.pattern,
+		.pattern-rotated {
+			display: none;
+		}
+	}
 
 	@media screen and (max-width: 450px) {
 		padding: 4rem 1rem 2rem;
@@ -57,13 +87,14 @@
 
 .head-text {
 	font-size: 2.75rem;
-	font-weight: 800;
+	font-weight: 700;
 	text-align: center;
 	color: var(--black-color);
 	text-transform: capitalize;
 
 	span {
 		color: var(--secondary-color);
+		font-weight: 650;
 	}
 
 	@media screen and (min-width: 2000px) {
@@ -76,6 +107,7 @@
 }
 
 .p-text {
+	font-weight: 400;
 	font-size: 0.8rem;
 	text-align: left;
 	color: var(--gray-color);
@@ -88,7 +120,7 @@
 
 .bold-text {
 	font-size: 1rem;
-	font-weight: 800;
+	font-weight: 600;
 	color: var(--black-color);
 	text-align: left;
 

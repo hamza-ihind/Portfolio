@@ -7,8 +7,8 @@ import './Testimonial.scss'
 import { images } from '../../constants'
 
 const testimonials = [
-    { name: 'Hassan Elqadi', company: 'Sissan', imgUrl: images.vue, feedback: 'Li derbna 9a3o Mayhemna Sda3o' },
-    { name: 'AbdelHakim Sami', company: 'Chedadi', imgUrl: images.flutter, feedback: 'Li 3ta Zkko lhla yfkko' }
+    { name: 'Ayoub Bahti', company: 'شركة القاضــي للميكة', imgUrl: images.bahti, feedback: 'Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o' },
+    { name: 'Hassan Elqadi', company: 'اللي عطا زكو لهلا يفكو', imgUrl: images.hassan, feedback: 'Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o' }
 ]
 
 const brands = [
@@ -33,33 +33,47 @@ const Testimonial = () => {
 
     return (
         <>
+
+            <img src={images.pattern} alt="pattern" className='pattern' />
+            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
+
             {
                 testimonials.length && (
                     <>
                         <div className='app__testimonial-item app__flex'>
+
                             <img src={test.imgUrl} alt="testimonial" />
-                            <div className='app__testimonial-content'>
-                                <p className='p-text'>
-                                    {test.feedback}
-                                </p>
-                                <div>
-                                    <h4 className='bold-text'>
-                                        {test.name}
-                                    </h4>
-                                    <h5 className='p-text'>
-                                        {test.company}
-                                    </h5>
+
+                            <div className='testimonial-container'>
+
+                                <div className='app__testimonial-btns app__flex'>
+                                    <div className='app__flex' onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
+                                        <HiChevronLeft />
+                                    </div>
+                                </div>
+
+                                <div className='app__testimonial-content'>
+                                    <p className='p-text'>
+                                        {test.feedback}
+                                    </p>
+                                    <img src={images.quote} alt="Quote" className='quote-png' />
+                                    <div>
+                                        <h4 className='bold-text'>
+                                            {test.name}
+                                        </h4>
+                                        <h5 className='p-text'>
+                                            {test.company}
+                                        </h5>
+                                    </div>
+                                </div>
+
+                                <div className='app__testimonial-btns app__flex'>
+                                    <div className='app__flex' onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
+                                        <HiChevronRight />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className='app__testimonial-btns app__flex'>
-                            <div className='app__flex' onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
-                                <HiChevronLeft />
-                            </div>
-                            <div className='app__flex' onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
-                                <HiChevronRight />
-                            </div>
                         </div>
                     </>
                 )

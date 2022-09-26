@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from 'emailjs-com'
 
 import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
@@ -17,25 +18,32 @@ const Footer = () => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value })
     }
-    const handleSubmit = () => {
+
+    const handleSubmit = (e) => {
         setLoading(true)
+        e.preventDefault();
+
+        emailjs.sendForm('service_0vmxz31', 'template_nj8ljez', e.target, "fHv_1o66YkbGxmYrr").then(res => { console.log(res) }).catch((err) => console.log(err))
     }
 
     return (
         <>
-            <h2 className='head-text'>Take a coffee & Chat with me</h2>
+            <h2 className='head-text title-text'><span>Take a coffee</span> & <span>Chat with me</span></h2>
+
+            <img src={images.pattern} alt="pattern" className='pattern' />
+            <img src={images.pattern} alt="pattern" className='pattern-rotated' />
 
             <div className='app__footer-cards'>
                 <div className='app__footer-card'>
                     <img src={images.email} alt='email' />
                     <a href="mailto:E11even@gmail.com" className='p-text'>
-                        E11even@Gmail.com
+                        ihind.mizo@Gmail.com
                     </a>
                 </div>
                 <div className='app__footer-card'>
                     <img src={images.mobile} alt='mobile' />
                     <a href="tel:+21212345678" className='p-text'>
-                        +21212345678
+                        +212 621-075329
                     </a>
                 </div>
             </div>
@@ -53,6 +61,11 @@ const Footer = () => {
                 <button type='button' className='p-text' onClick={handleSubmit} >
                     {loading ? 'Sending...' : 'Send Message'}
                 </button>
+            </div>
+
+            <div className='copyright'>
+                <p className='p-text'> @2022 E11even </p>
+                <p className='p-text'> All rights reserved </p>
             </div>
         </>
     )

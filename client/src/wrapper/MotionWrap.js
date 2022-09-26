@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { images } from '../constants';
 
 const MotionWrap = (Component, classNames) =>
 	function HOC() {
