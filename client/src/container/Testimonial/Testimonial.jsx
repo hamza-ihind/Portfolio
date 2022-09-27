@@ -7,8 +7,8 @@ import './Testimonial.scss'
 import { images } from '../../constants'
 
 const testimonials = [
-    { name: 'Ayoub Bahti', company: 'شركة القاضــي للميكة', imgUrl: images.bahti, feedback: 'Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o' },
-    { name: 'Hassan Elqadi', company: 'اللي عطا زكو لهلا يفكو', imgUrl: images.hassan, feedback: 'Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o Li derbna 9a3o Mayhemna Sda3o' }
+    { name: 'Ayoub Bahti', company: 'CEO, Image Detailing Inc', imgUrl: images.bahti, feedback: 'Hamza has a keen eye for design, is a master of React & several other programming technologies, and has a creative/artistic way about him that allows him to use all of his skills in synergy to bring a project full circle and at the right price. I can’t say enough about Hamza. If my own mother asked me tomorrow who she should hire for a web project… Hamza is the guy I’d recommend… and without hesitation.' },
+    { name: 'Hassan Elqadi', company: 'Media Manager, Carnoisseur Ltd', imgUrl: images.hassan, feedback: 'I was looking for a Web professional who would create and evolve my website. Hamza delivers exactly what I want. It’s always a pleasure working and seeing him. I enjoy meeting him as he lives locally and I always leave his place with a spring in my step and a smile on my face. I know he will keep improving my website and advising me in the best ways forward for years to come, with SEO and new features. I look forward to a great working relationship and friendship with him.' }
 ]
 
 const brands = [
@@ -50,6 +50,9 @@ const Testimonial = () => {
                                     <div className='app__flex' onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
                                         <HiChevronLeft />
                                     </div>
+                                    <div className='app__flex' onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
+                                        <HiChevronRight />
+                                    </div>
                                 </div>
 
                                 <div className='app__testimonial-content'>
@@ -67,11 +70,7 @@ const Testimonial = () => {
                                     </div>
                                 </div>
 
-                                <div className='app__testimonial-btns app__flex'>
-                                    <div className='app__flex' onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
-                                        <HiChevronRight />
-                                    </div>
-                                </div>
+
                             </div>
 
                         </div>

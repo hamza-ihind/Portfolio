@@ -8,9 +8,9 @@ import { images } from '../../constants'
 
 // Temporary DataBase
 const abouts = [
-    { title: 'Front-End Developer', description: 'I am a Front-End Developer.', imgUrl: images.reactjs },
-    { title: 'Back-End Developer', description: 'I am a Back-End Developer.', imgUrl: images.nodejs },
-    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer.', imgUrl: images.uiux }
+    { title: 'Front-End Developer', description: 'I am a Front-End Developer with a full understanding of the web development process from inception to deployment..', imgUrl: images.reactjs },
+    { title: 'Back-End Developer', description: 'I am a Back-End Developer who tend to focus on smaller parts of the whole, such as applications and programs', imgUrl: images.nodejs },
+    { title: 'UI/UX Designer', description: 'I am a UI/UX Designer, I create the user interface for an app, website, or other interactive media.', imgUrl: images.uiux }
 ]
 
 const About = () => {

@@ -9,7 +9,7 @@ import './Work.scss'
 const works = [
     { title: 'Analog Clock', description: 'Analog Clock made with HTML CSS JS, to test my UI design skills, and it was my first project ever made with Vanilla JavaScript', tags: ["UI/UX", "All"], imgUrl: images.clock, codeLink: "https://github.com/hamza-ihind/Analog-Clock" },
     { title: 'Todoist Clone', description: 'Clone of Todoist made with React.js (unit and Integration testing) and Firebase, and using Sass', tags: ["Web Apps", "All"], imgUrl: images.todoist, codeLink: "https://github.com/hamza-ihind/Todoist-clone/tree/master/todoist-clone" },
-    { title: 'ENSA Agadir Website', description: 'ENSA Agadir\'s (My School) Website, made with React.js and Sass, main Goal is to show some UI/UX design skills.', tags: ["UI/UX", "All"], imgUrl: images.ensa, codeLink: "https://github.com/hamza-ihind/ENSA" },
+    { title: 'ENSA Agadir Website??', description: 'Coming soon...', tags: ["UI/UX", "All"], imgUrl: images.ensa, codeLink: "https://github.com/hamza-ihind/ENSA" },
 
 ]
 
