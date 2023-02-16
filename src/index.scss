@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+  --font-base: "Outfit", sans-serif;
+
+  --primary-color: #a5c9ca;
+
+  --secondary-color: #2c3333;
+
+  --lightGray-color: #d0c9c0;
+
+  --black-color: #030303;
+
+  --gray-color: #3c4c85;
+
+  --brown-color: #46364a;
+
+  --white-color: #e7f6f2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
