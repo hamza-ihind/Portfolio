@@ -49,6 +49,7 @@ import clock from "../assets/clock.png";
 import todoist from "../assets/todoist.jpg";
 import ensa from "../assets/ensa.png";
 import compil from "../assets/compil.png";
+import crwn from "../assets/crwn.png";
 
 export default {
   email,
@@ -98,4 +99,5 @@ export default {
   todoist,
   ensa,
   compil,
+  crwn,
 };

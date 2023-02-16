@@ -39,6 +39,14 @@ const works = [
     imgUrl: images.compil,
     codeLink: "https://github.com/hamza-ihind/CompilCourt",
   },
+  {
+    title: "CRWN Clothing",
+    description:
+      "The main website of Compil'Court. A foundation created by ENSA students to help their classmates by using LaTeX to correct previous exams and write lessons that are clear and easy to understand",
+    tags: ["Web Apps", "All"],
+    imgUrl: images.crwn,
+    codeLink: "https://github.com/hamza-ihind/Capstone_Website",
+  },
 ];
 
 const Work = () => {

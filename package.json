@@ -12,7 +12,6 @@
     "emailjs": "^4.0.1",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^7.3.2",
-    "gh-pages": "^4.0.0",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -49,7 +48,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hamza-ihind/portfolio.git"
