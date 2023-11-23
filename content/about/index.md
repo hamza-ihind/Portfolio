@@ -2,21 +2,19 @@
 title: 'About Me'
 avatar: 'me.jpg'
 skills:
+  - Chess
   - Coding
-  - Reading
-  - Painting
-  - Crafting
+  - Leadership
   - Problem Solving
-  - Team Management
-  - Mentoring
+  - Project Management
+  - Fullstack developement
+  - Computer Science
 ---
 
-Hello! I'm Yashita Namdeo, from Indore, also known as Mini Mumbai and the Cleanest City of India.
+Hello, I'm Hamza Ihind, a passionate full-stack developer and an engineering student at ENSA Agadir.
 
-I am a creative, time punctual, dedicated, goal-oriented individual with decent moral Values and Ethicates along with a high-energy level, honed communication skills, strong organizational skills, and meticulous attention to detail.
+With a keen interest in computer science and technology, I'm on a mission to explore and innovate in the digital world. Whether it's front-end design or back-end development, I thrive on turning ideas into reality through code.
 
-I am pursuing my Bachelors from [SVVV, Indore](https://www.svvv.edu.in/) in Computer Science and Engineering (2018-2022) my current GPA is [3.7]() out of 4.
+I'm excited to share my projects and experiences as I continue to learn and grow in the ever-evolving field of computer science and software engineering.
 
-I am a member of [Developer Student Club - SVVV](https://dsc.community.dev/shri-vaishnav-vidyapeeth-vishwavidyalaya/) and have also been awarded 75% Merit Scholarship(Top 10%) by my college.
-
-Here are a few of the other activities that I love to do!
+I enjoy engaging in the following hobbies in my free time:

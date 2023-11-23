@@ -1,10 +1,8 @@
 ---
 title: 'Hello, my name is'
-name: 'Yashita Namdeo'
-subtitle: 'I love exploring new things!'
+name: 'Hamza Ihind'
+subtitle: 'Coding stories into existence!'
 buttonText: 'Get In Touch'
 ---
 
-I'm a Final Year Computer Science Engineering Student at SVVV, Indore. Primarily interested in Web Development and Data Science.
-
-I enjoy learning new skills and implementing them in real life!
+An Engineering student at ENSA Agadir, Computer Science Enthusiast, Full stack developer (MERN STACK).

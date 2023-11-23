@@ -1,12 +1,15 @@
 ---
 date: '4'
-title: 'AI Face Landmark Detection'
-cover: 'face-landmark.png'
-github: 'https://github.com/yashitanamdeo/face-landmark-detection'
+title: 'JEEA Website'
+cover: 'jeea.png'
+github: 'https://github.com/hamza-ihind/JEEA_Project'
 external: 'https://yashitanamdeo.github.io/face-landmark-detection/'
 tech:
-  - TensorFlow.JS
-  - React
+  - React.js
+  - Node.js
+  - Clerk
+  - SCSS
+  - Figma
 showInProjects: true
 ---
 

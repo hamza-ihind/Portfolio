@@ -1,16 +1,11 @@
 {
-  "name": "v1",
-  "description": "Personal Website V1",
+  "name": "portfolio",
+  "description": "My personal Portfolio",
   "version": "1.0.0",
-  "author": "Yashita Namdeo <yashita.namdeo2000@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yashitanamdeo/yashitanamdeo.github.io"
-  },
+  "author": "Hamza Ihind <ihind.mizo@gmail.com>",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
